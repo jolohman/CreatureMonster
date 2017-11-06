@@ -1,0 +1,313 @@
+*{
+	margin: 0;
+	padding: 0;
+	height:100%;
+} 
+
+body {
+	background-image: url("img/background.png");
+	background-size: 100% 100%;
+}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: 10% 50% 40%;
+	grid-template-rows: 10% 50% 40%;
+	grid-template-areas:
+	". . ."
+	". frogger ."
+	". . .";
+}
+
+/*This next section is the head, the next commet*/
+
+.frogger {
+	grid-area: frogger;
+	height: 100%;
+	width: 100%;
+}
+
+.froghead {
+	width: 300px;
+	height: 300px;
+	background-color: none;
+	position: relative;
+}
+
+.frogeyeleft {
+	display:inline-block;
+	top: 46px;
+	left: 90px;
+	width: 60px;
+	height: 160px;
+	z-index: 1;
+	border-top: 1px solid black;
+  	border-right: 1px solid black;
+  	border-bottom: 2px solid black;
+  	border-left: 2px solid black;
+	border-radius: 60% 60%;
+	position: relative;
+	background: white;
+}
+
+.frogeyeright {
+	display: inline-block;
+	top: 46px;
+	left: 70px;
+	width: 60px;
+	height: 160px;
+	border-top: 1px solid black;
+ 	border-right: 1px solid black;
+  	border-bottom: 2px solid black;
+  	border-left: 2px solid black;
+	border-radius: 60% 60%;
+	position: relative;
+	background: white;
+}
+
+#leftball {
+	top: 39px;
+	left: 16px;
+	width: 40px;
+	height: 100px;
+	z-index: 1;
+	border-radius: 60% 60%;
+	border: 1px solid black;
+	position: relative;
+	background: black;
+}
+
+#rightball {
+	top: 39px;
+	left: 16px;
+	width: 40px;
+	height: 100px;
+	z-index: 1;
+	border-radius: 60% 60%;
+	border: 1px solid black;
+	position: relative;
+	background: black;
+}
+
+.greenchin {
+  top: 0px;
+  left: 42px;
+  position: relative;
+  z-index: 2;
+  width: 220px;
+  height: 88px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-radius: 44%;
+	background: green;  
+}
+
+.freckle {
+ position: relative;
+ width: 2px;
+ height:2px;
+ background: black;
+ border: 2px solid black;
+ border-radius: 100%;
+ }
+
+#mouth {
+  width: 90px;
+  height: 0px;
+  border: 2px solid black;
+  top: 45px;
+  left: 75px;
+  position: relative;
+}
+
+.freckle {
+ position: relative;
+ width: 2px;
+ height:2px;
+ background: black;
+ border: 2px solid black;
+ border-radius: 100%;
+ }
+
+#freckle1 {
+  top: 27px;
+  left: 185px;
+}
+
+#freckle2 {
+  top: 21px;
+  left: 50px;
+}
+
+#freckle3 {
+  top: 15px;
+  left: 25px;
+}
+
+#freckle4 {
+  top: 30px;
+  left: 37.5px;
+}
+
+#freckle5 {
+	top: 24px;
+	left: 198px;
+}
+
+/*--------Next section Includes the Frogs Main body--------*/
+
+.main {
+	top: -30px;
+  left: 60px;
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  height: 210px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-radius: 50% 50% 50% 50%;
+	background: green;
+}
+
+.rightarm {
+	top: -150px;
+	left: 165px;
+	position: relative;
+	z-index: 3;
+	width: 15px;
+	height: 130px;
+	border-right: 1px solid black;
+	border-left: 3px solid black;
+	background: green;
+}
+
+.righthand {
+	top: -170px;
+	left: 155px;
+	position: relative;
+	z-index: 1;
+	width: 40px;
+	height: 60px;
+	transform: rotate(-50deg);
+	background: green;
+	border-top: 3px solid black;
+  	border-right: 1px solid black;
+ 	border-bottom: 1px solid black;
+  	border-left: 4px solid black;
+	border-radius: 50%;
+}
+
+.leftarm {
+	top: -344px;
+	left: 110px;
+	position: relative;
+	z-index: 3;
+	width: 15px;
+	height: 130px;
+	border-right: 1px solid black;
+	border-left: 3px solid black;
+	background: green;
+}
+
+.lefthand {
+	top: -365px;
+	left: 100px;
+	position: relative;
+	width: 40px;
+	height: 60px;
+	z-index: 1;
+	transform: rotate(-50deg);
+	background: green;
+	border-top: 3px solid black;
+  	border-right: 1px solid black;
+ 	border-bottom: 1px solid black;
+  	border-left: 4px solid black;
+	border-radius: 50%;
+}
+
+.rightleg {
+	top:-600px;
+	position: relative;
+	width: 100px;
+	height: 180px;
+	z-index: -1;
+	transform: rotate(-50deg);
+	border-top: 3px solid black;
+  	border-right: 1px solid black;
+ 	border-bottom: 1px solid black;
+  	border-left: 4px solid black;
+  	border-radius: 50% 50% 50% 50%;
+	background: green;
+}
+
+.rfold {
+	top: 60px;
+	left: 48px;
+	width: 0px;
+	height: 120px;
+	z-index: -1;
+	position: relative;
+	border: 2px solid black ;
+}
+
+.rightfoot {
+	top:-685px;
+	left: 15px;
+	position: relative;
+	width: 50px;
+	height: 160px;
+	z-index: -2;
+	transform: rotate(-125deg);
+	border-top: 4px solid black;
+  	border-right: 3px solid black;
+ 	border-bottom: 1px solid black;
+  	border-left: 1px solid black;
+  	border-radius: 40% 40% 50% 50%;
+	background: green;
+}
+.leftleg {
+	top:-948px;
+	left: 150px;
+	position: relative;
+	width: 100px;
+	height: 180px;
+	z-index: -1;
+	transform: rotate(50deg);
+	border-top: 2px solid black;
+  	border-right: 1px solid black;
+ 	border-bottom: 1px solid black;
+  	border-left: 4px solid black;
+  	border-radius: 50% 50% 50% 50%;
+	background: green;
+}
+
+.lfold {
+	top: 60px;
+	left: 50px;
+	width: 0px;
+	height: 120px;
+	z-index: 1;
+	position: relative;
+	border: 2px solid black ;
+}
+
+.leftfoot {
+	top:-1055px;
+	left: 190px;
+	position: relative;
+	width: 50px;
+	height: 160px;
+	z-index: -2;
+	transform: rotate(120deg);
+	border-top: 4px solid black;
+  	border-right: 3px solid black;
+ 	border-bottom: 1px solid black;
+  	border-left: 1px solid black;
+  	border-radius: 40% 40% 50% 50%;
+	background: green;
+}
